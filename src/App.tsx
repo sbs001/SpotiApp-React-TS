@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/Home';
+import Nav from './Components/Nav/Nav';
 
 function App() {
   return (
-    <div className="App">
-    <Home />
+    <div className="container-fluid">
+      <Nav />
+      <Home />
     </div>
   );
 }
