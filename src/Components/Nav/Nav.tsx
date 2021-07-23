@@ -4,7 +4,7 @@ import logo from '../img/logo.png';
 export default function Nav(): JSX.Element {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark pl-5">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="" width="40" height="40"/>
