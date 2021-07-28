@@ -3,6 +3,9 @@ import logo from '../img/logo.png';
 
 export default function Nav(): JSX.Element {
 
+  const handleSubmit = (event:any) => {
+    event.preventDefault();
+  }
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
       <div className="container-fluid">
@@ -18,16 +21,16 @@ export default function Nav(): JSX.Element {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              {/* <a className="nav-link" href="#">Link</a> */}
             </li>
           </ul>
 
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <form className="d-flex w-75" onSubmit={handleSubmit}>
+            <input className="form-control me-1" type="search" placeholder="Search artists..." aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
 
