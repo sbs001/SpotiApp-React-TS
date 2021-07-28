@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { State } from '../../interface';
+import { getNewRealses } from '../../redux/actions';
+import Card from '../Card/Card';
 
 export default function Home(): JSX.Element {
 
+  const dispatch = useDispatch();
+  const newRealses: any[] = useSelector((state: State) => state.artists)
+
+  useEffect(() => {
+    dispatch(getNewRealses());
+  }, [dispatch]);
+
+  console.log(newRealses)
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-4">
-      <div className="col">
+    <div>
+      <h1 className="my-5 text-light">New Releases</h1>
+      <div className="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        {newRealses.map(release => <Card item={release} />)}
       </div>
     </div>
   )

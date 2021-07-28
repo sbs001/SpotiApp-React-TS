@@ -1,13 +1,19 @@
 import React from 'react';
+import noImg from '../img/noimage.png'
 
-export default function Card({ artist }: any): JSX.Element {
+export default function Card({ item }: any): JSX.Element {
 
+  console.log(item.images)
   return (
-    <div className="card">
-      <img src="..." className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div className="col">
+      <div className="card">
+        <img src={item.images[0].url || noImg} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{item.name}</h5>
+          <p className="card-text">
+            {item.artists.map((artist: any) => <span className="badge bg-success m-1">{artist.name}</span>)}
+          </p>
+        </div>
       </div>
     </div>
   )

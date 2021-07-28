@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <Nav />
-      <Home />
+      <div className="container mp-5">
+        <Home />
+      </div>
     </div>
   );
 }
