@@ -1,9 +1,9 @@
-import { GET_NEW_RELEASES } from "../actions";
-import { Action, State } from "../../interface";
+import { GET_NEW_RELEASES } from "../actions/actions";
+import { Action, State } from "../../interfaces/interface";
 
 
 const InitialState:State = {
-    artists: [],
+    newReleases: [],
 };
 
 export default function rootReducer(state = InitialState, action:Action) {
@@ -11,7 +11,7 @@ export default function rootReducer(state = InitialState, action:Action) {
     if (action.type === GET_NEW_RELEASES)
       return {
         ...state,
-        artists: action.payload.albums.items
+        newReleases: action.payload
       }
     return state;
 }

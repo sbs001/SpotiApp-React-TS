@@ -1,5 +1,4 @@
 import axios from "axios";
-import swal from "sweetalert";
 import { URL_NEW_RELEASES } from "../../constants";
 
 export const GET_NEW_RELEASES = "GET_NEW_RELEASES";

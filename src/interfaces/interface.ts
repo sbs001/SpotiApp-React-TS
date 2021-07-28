@@ -1,5 +1,7 @@
+import { NewReleases } from "./new-releases";
+
 export interface State {
-  artists: any[];
+  newReleases: NewReleases[];
 }
 
 export interface Action {

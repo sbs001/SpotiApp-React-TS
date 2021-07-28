@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { State } from '../../interface';
-import { getNewRealses } from '../../redux/actions';
+import { State } from '../../interfaces/interface';
+import {  NewReleases } from '../../interfaces/new-releases';
+import { getNewRealses } from '../../redux/actions/actions';
 import Card from '../Card/Card';
 
 export default function Home(): JSX.Element {
 
   const dispatch = useDispatch();
-  const newRealses: any[] = useSelector((state: State) => state.artists)
+  const newRealses: NewReleases[] = useSelector((state: State) => state.newReleases)
 
   useEffect(() => {
     dispatch(getNewRealses());
