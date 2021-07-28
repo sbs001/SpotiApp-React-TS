@@ -1,0 +1,7 @@
+.noLink {
+    color: black;
+}
+
+.spotiCard a {
+    text-decoration: none !important;
+}

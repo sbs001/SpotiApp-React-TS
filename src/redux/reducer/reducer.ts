@@ -16,7 +16,7 @@ export default function rootReducer(state = InitialState, action: Action) {
   if (action.type === GET_ARTISTS)
     return {
       ...state,
-      artists: action.payload,
+      artistsFound: action.payload,
     };
 
   return state;
