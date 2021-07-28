@@ -15,14 +15,13 @@ export const getNewRealses = () => {
   };
 };
 
-export const getArtists = (artist:string) => {
-  return function(dispatch:any){
-    return axios.get(URL_ARTISTS+artist)
-      .then( response => {
-        dispatch({
-          type:GET_ARTISTS,
-          payload: response.data
-        })
-      })
-  }
-}
+export const getArtists = (artist: string) => {
+  return function (dispatch: any) {
+    return axios.get(URL_ARTISTS + artist).then((response) => {
+      dispatch({
+        type: GET_ARTISTS,
+        payload: response.data,
+      });
+    });
+  };
+};
