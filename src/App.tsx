@@ -8,15 +8,15 @@ import Search from './Components/Search/Search';
 function App() {
   return (
     <div>
-      <Nav />
-      <div className="container mp-5">
-        <BrowserRouter>
+      <BrowserRouter>
+        <Nav />
+        <div className="container mp-5">
           <Switch>
             <Route path="/search" component={Search} />
             <Route path="/" component={Home} />
           </Switch>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
