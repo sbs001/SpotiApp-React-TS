@@ -13,10 +13,14 @@ export interface Image {
   width: number;
 }
 
+export interface ExternalUrl{
+  spotify:string
+}
+
 export interface Album {
   album_type: string;
   artists: ArtistSimple[];
-  external_urls: string;
+  external_urls: ExternalUrl;
   href: string;
   id: string;
   images: Image[];

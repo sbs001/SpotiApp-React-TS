@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import Nav from './Components/Nav/Nav';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Search from './Components/Search/Search';
+import Artist from './Components/Artist/Artist';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Nav />
         <div className="container mp-5">
           <Switch>
+            <Route path="/artist/:id" component={Artist} />
             <Route path="/search" component={Search} />
             <Route path="/" component={Home} />
           </Switch>

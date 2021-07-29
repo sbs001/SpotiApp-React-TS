@@ -1,4 +1,4 @@
-import { Album, ArtistSimple } from "./gral-data";
+import { Album, ArtistSimple, ExternalUrl } from "./gral-data";
 
 export interface TopTrack {
   album: Album;
@@ -7,7 +7,7 @@ export interface TopTrack {
   duration_ms: number;
   explicit: boolean;
   external_ids: string;
-  external_urls: string;
+  external_urls: ExternalUrl;
   href: string;
   id: string;
   is_local: boolean;
