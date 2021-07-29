@@ -5,6 +5,7 @@ import Nav from './Components/Nav/Nav';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Search from './Components/Search/Search';
 import Artistt from './Components/Artist/Artist';
+import About from './Components/About/About';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route path="/artist/:id" component={Artistt} />
             <Route path="/search" component={Search} />
+            <Route path="/about" component={About} />
             <Route path="/" component={Home} />
           </Switch>
         </div>
