@@ -1,11 +1,22 @@
-import React from 'react';
-import {  NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import {  NavLink, useHistory } from 'react-router-dom';
+import { getArtists } from '../../redux/actions/actions';
 import logo from '../img/logo.png';
 
 export default function Nav(): JSX.Element {
 
+  const [input,setInput] = useState('');
+  const dispatch= useDispatch();
+  const history  = useHistory();
+
+  const handleInputChange = (event:any) =>{
+    setInput(event.target.value)
+  }
   const handleSubmit = (event: any) => {
     event.preventDefault();
+    dispatch(getArtists(input));
+    history.push('/search')
   }
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
@@ -35,7 +46,7 @@ export default function Nav(): JSX.Element {
           </ul>
 
           <form className="d-flex w-75" onSubmit={handleSubmit}>
-            <input className="form-control me-1" type="search" placeholder="Search artists..." aria-label="Search" />
+            <input className="form-control me-1" type="search" placeholder="Search artists..." aria-label="Search" onChange={handleInputChange} />
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
 
