@@ -1,7 +1,13 @@
-.noLink {
+.spotiCard a {
+    text-decoration: none !important;
     color: black;
 }
 
-.spotiCard a {
-    text-decoration: none !important;
+.spotiCard {
+    transition: 0.5s;
+}
+
+.spotiCard:hover {
+    transform: scale(1.0125);
+    box-shadow: 0px 0px 30px -6px rgba(49, 235, 22, 1);
 }

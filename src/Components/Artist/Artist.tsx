@@ -25,7 +25,7 @@ export default function Artistt(): JSX.Element {
   }, [params]);
 
   return (
-    <div className="row mt-5">
+    <div className="row mt-5 fadeInSlow">
       <div className="col-2">
         <img src={artist?.images[0].url || noImg} alt="" className="img-thumbnail img-circle" />
       </div>
