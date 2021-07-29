@@ -22,3 +22,10 @@
         opacity: 1;
     }
 }
+
+.spinner {
+    width: 60px;
+    position: absolute;
+    left: 45%;
+    margin-top: 50px;
+}

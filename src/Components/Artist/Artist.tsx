@@ -6,6 +6,8 @@ import { Artist } from '../../interfaces/artist';
 import { TopTrack } from '../../interfaces/top-tracks';
 import noImg from '../img/noimage.png';
 import './Artist.css';
+import spinner from '../img/spinner.gif';
+
 
 interface Param {
   id: string
@@ -24,6 +26,7 @@ export default function Artistt(): JSX.Element {
       .then(res => setTopTracks(res.data))
   }, [params]);
 
+  if (!topTracks?.length) return <img className='spinner' src={spinner} alt=".." />
   return (
     <div className="row mt-5 fadeInSlow">
       <div className="col-2">
@@ -32,7 +35,7 @@ export default function Artistt(): JSX.Element {
 
       <div className="col">
         <h1>{artist?.name}</h1>
-        {artist?.genres.map((genre, i) => <span key={i}> {genre} {i+1 !== artist.genres.length && '/'} </span>)}
+        {artist?.genres.map((genre, i) => <span key={i}> {genre} {i + 1 !== artist.genres.length && '/'} </span>)}
         <h4 className="mt-3">
           <span className="badge bg-success">Followers: <span className="badge bg-dark">{artist?.followers.total}</span></span>
         </h4>
@@ -77,5 +80,6 @@ export default function Artistt(): JSX.Element {
         </table>
       </div>
     </div>
+
   )
 }
