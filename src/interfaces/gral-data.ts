@@ -1,5 +1,8 @@
+export interface ExternalUrl {
+  spotify: string;
+}
 export interface ArtistSimple {
-  external_urls: string;
+  external_urls: ExternalUrl;
   href: string;
   id: string;
   name: string;
@@ -11,10 +14,6 @@ export interface Image {
   height: number;
   url: string;
   width: number;
-}
-
-export interface ExternalUrl{
-  spotify:string
 }
 
 export interface Album {
