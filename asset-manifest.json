@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SpotiApp-React-TS/static/css/main.6745ebee.chunk.css",
+    "main.js": "/SpotiApp-React-TS/static/js/main.bbd40461.chunk.js",
+    "main.js.map": "/SpotiApp-React-TS/static/js/main.bbd40461.chunk.js.map",
+    "runtime-main.js": "/SpotiApp-React-TS/static/js/runtime-main.91606543.js",
+    "runtime-main.js.map": "/SpotiApp-React-TS/static/js/runtime-main.91606543.js.map",
+    "static/js/2.c8b9609c.chunk.js": "/SpotiApp-React-TS/static/js/2.c8b9609c.chunk.js",
+    "static/js/2.c8b9609c.chunk.js.map": "/SpotiApp-React-TS/static/js/2.c8b9609c.chunk.js.map",
+    "static/js/3.483ac8f3.chunk.js": "/SpotiApp-React-TS/static/js/3.483ac8f3.chunk.js",
+    "static/js/3.483ac8f3.chunk.js.map": "/SpotiApp-React-TS/static/js/3.483ac8f3.chunk.js.map",
+    "index.html": "/SpotiApp-React-TS/index.html",
+    "static/css/main.6745ebee.chunk.css.map": "/SpotiApp-React-TS/static/css/main.6745ebee.chunk.css.map",
+    "static/js/2.c8b9609c.chunk.js.LICENSE.txt": "/SpotiApp-React-TS/static/js/2.c8b9609c.chunk.js.LICENSE.txt",
+    "static/media/in2.87b49911.png": "/SpotiApp-React-TS/static/media/in2.87b49911.png",
+    "static/media/logo.2ab4f4cc.png": "/SpotiApp-React-TS/static/media/logo.2ab4f4cc.png",
+    "static/media/noimage.8fc5c4dd.png": "/SpotiApp-React-TS/static/media/noimage.8fc5c4dd.png",
+    "static/media/spinner.e14de2ca.gif": "/SpotiApp-React-TS/static/media/spinner.e14de2ca.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91606543.js",
+    "static/js/2.c8b9609c.chunk.js",
+    "static/css/main.6745ebee.chunk.css",
+    "static/js/main.bbd40461.chunk.js"
+  ]
+}
